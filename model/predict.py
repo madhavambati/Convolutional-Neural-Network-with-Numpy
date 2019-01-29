@@ -42,7 +42,7 @@ if __name__ == '__main__':
         
         #cimg = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,\
            # cv.THRESH_BINARY,11,2)
-        print('done')
+        
         while np.sum(cimg[0]) == 0:
             cimg = cimg[1:]
 
@@ -56,25 +56,25 @@ if __name__ == '__main__':
             cimg = cimg[:,:-1]
             
         rows,cols = cimg.shape
-        print(  "after shit",cimg.shape)
+        
         if rows == cols:
             nrows = 20
             ncols = 20
             cimg = cv.resize(cimg, (ncols,nrows))
-            print('done')
+            
         
         if rows > cols:
             nrows = 20
             ncols = int(round((cols*20.0/rows), 0))
             cimg = cv.resize(cimg, (ncols,nrows))
-            print('done')
+            
         
         else:
             ncols = 20
             nrows = int(round((rows*20.0/cols), 0))
-            print('done')
+          
             cimg = cv.resize(cimg, (ncols,nrows))
-            print('done')
+            
                              
         print(nrows, ncols)
         col_pad = (int(math.ceil((28-ncols)/2.0)), int(math.floor((28-ncols)/2.0)))
