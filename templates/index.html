@@ -1,0 +1,99 @@
+{% extends 'layout.html' %}
+{% block body %}
+<section class="hide-on-small-only">
+<center>
+    
+   <body background="static/bg.jpg">
+    
+
+    <div class="container" style="text-align: center;">
+        <a id = 'logo'href="/"><img class="logo" src="{{ url_for('static', filename='logo.png') }}" href="/" ></a>
+        <h4 class="subtitle center-align">A Digit Classifier <a href=https://github.com/madhavambati target="_blank">Github</a> </h4>
+        <h5 id="text" class="center-align with-subtitle" >powered by a Convolutional Neural Network</h5>
+        
+        <h6 class="subtitle center-align">Draw a digit on the canvas below and click on Predict</h6>
+        <div class="row center-align">
+            <!-- <div class="row"> -->
+                <!-- <div class="col s10 offset-s1 m10 offset-m1"> -->
+                    <div class="container">
+                        <div class="board" id="default-board" height="520" style="float:left;margin-left: 37%;"></div>
+                        <!-- <div class="result"> -->
+                        <!-- <span id="result" style="margin:0px auto;font-family: Helvetica;font-size: 16px;color:#828282;">Prediction will be displayed here</span> -->
+                        
+                        </div>
+                    </div>
+
+
+                <span id = "R"> your prediction will be here </span>   
+               <!--  </div> -->
+            <!-- </div> -->
+        </div>
+          
+         <button id="button" class="waves-effect waves-light btn" onclick=digit_process()>Predict</button>
+    </div>
+  </body>
+</center>
+    <footer style="text-align: center;">
+        <br>Designed by : Madhav Ambati | <a href="https://www.facebook.com/profile.php?id=100005265872634" target="_blank">Facebook </a>| <a href="https://www.kaggle.com/madhavambati" target="_blank"> Kaggle</a>
+    </footer>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+
+<script src="{{ url_for('static', filename='style/drawingBoard.min.js') }}"></script>
+<script src="{{ url_for('static', filename='style/hermiteResize.js') }}"></script>
+<script>
+    //create the drawingboard by passing it the #id of the wanted container
+   var board = new DrawingBoard.Board('default-board', {
+	controls: [
+		// { Size: { type: 'dropdown' } },
+		{ DrawingMode: {pencil:false, eraser:false, filler: false } },
+        { Navigation: {back: false, forward:false} },
+        'Download'
+	],
+	size: 10,
+	webStorage: false,
+	enlargeYourContainer: true
+    });
+    function digit_process(){
+        var resizedCanvas = document.createElement('canvas');
+        resample_single(board.canvas, 28, 28, true, resizedCanvas);
+        var ctx = resizedCanvas.getContext("2d");
+        var imgData= ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height);
+        var data = imgData.data;
+        var grayscale_list =  []
+        for (var i = 0; i < data.length; i += 4) {
+                var avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+                data[i] = avg; // red
+                data[i + 1] = avg; // green
+                data[i + 2] = avg; // blue
+                grayscale_list.push(avg);
+        }
+        ctx.putImageData(imgData, 0, 0);
+        var img = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height).data;
+
+        $(function () {
+                // $('button').click(function () {
+                    $('#R').html("Predicting . . .");
+                    console.log("Function is successfully called")
+                    $.ajax({
+                        url: '/digit_process',
+                        data: JSON.stringify(grayscale_list),
+                        contentType: "application/json; charset=utf-8",
+                        type: 'POST',
+                        success: function (response) {
+                            console.log(response);
+                            $('#R').html("Prediction : <br><span class='digit'>"+response['digit']+"</span></br> Probability : "+response['probability']);
+                            //$('#result').text(response);
+                            //10, 28
+                            $("#R").html("you might have entered a: "+response[10])
+                        },
+                        error: function (error) {
+                            console.log(error);
+                        }
+                    });
+                // });
+            });
+        } 
+</script>
+{% endblock %}
+
