@@ -1,0 +1,13 @@
+anaconda==0.0.1.1
+Flask==1.0.2
+jedi==0.12.1
+Jinja2==2.10
+jsonschema==2.6.0
+matplotlib==2.2.3
+numpy==1.15.0
+opencv-python==4.0.0.21
+pickleshare==0.7.4
+Pillow==5.4.1
+scipy==1.1.0
+
+
