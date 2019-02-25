@@ -5,7 +5,7 @@ import pickle as pickle
 
 if __name__ == '__main__':
 
-    # cost = train()
+    cost = train()
     save_path = 'params.pkl'
     params, cost = pickle.load(open(save_path, 'rb'))
     [f1, f2, w3, w4, b1, b2, b3, b4] = params
