@@ -39,8 +39,10 @@ Detailed description of all these layers can be found in the links given above. 
 ## Architecture:
 
 
-          INPUT -> ConvLayer -> ConvLayer -> MAXPOOL -> FC -> DenseLayer -> OutputLayer -> Softmax Activation
+         INPUT -> ConvLayer1 -> ConvLayer2 -> MAXPOOL -> FC -> DenseLayer -> OutputLayer -> Softmax Activation
 
 
 <img src="https://user-images.githubusercontent.com/27866638/55744651-14d80e80-5a53-11e9-8597-0b5601de0b96.png">
 
+Image transition after each layer through the Network.
+- 
