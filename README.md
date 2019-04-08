@@ -77,7 +77,7 @@ an accuracy score of **97.3%** has been achieved.
 ## Web Application:
 An interactive canvas was created when the the predict button is clicked the image data is sent as a jason string and passed through a prediction algorithm. The predicted data/number is displayed at the bottom of the canvas. you can also see the prediction probability in your browser console.
 
-<img src="https://user-images.githubusercontent.com/27866638/55752974-e106e400-5a66-11e9-9898-a46d9c777bd3.png" width="880">
+<img src="https://user-images.githubusercontent.com/27866638/55753186-51ae0080-5a67-11e9-9671-328b49e3a927.png" width="880">
 
 ## Installation:
 Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
