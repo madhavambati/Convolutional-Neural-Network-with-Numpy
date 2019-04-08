@@ -54,6 +54,9 @@ Image transition after each layer through the Network.
 - DenseLayer  - 128×1
 - OutputLayer - 10×1
 
+## Training the Network:
+Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1.
+
 ## Installation:
 Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
 
@@ -65,7 +68,7 @@ Use the following commands to install the model in your machine. The network is 
 
       cd Convolutional-Neural-Network-with-Numpy
       
-- If you like to train the network yourself.But it took a solid 5hrs for me to train the network.
+- If you like to train the network yourself. But it took a solid 5hrs for me to train the network.
       
       cd model
       
