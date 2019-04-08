@@ -13,6 +13,8 @@ A **Deep learning Model** made from scratch with only numpy. No other libraries/
 As part of my personal journey to gain a better understanding of Deep Learning, I’ve decided to build a Convolutional Neural Network from scratch without a deep learning library like TensorFlow. I believe that understanding the inner workings of a Neural Network is important to any aspiring Data Scientist.This allowed me to deeply understand every method in my model and gave me a better intution of Neural Networks.
 
 **screenshots** of the live App:
+
+
 <img src="https://user-images.githubusercontent.com/27866638/55739815-73978b00-5a47-11e9-8a81-f967ab9edf97.png" width = "500">
 
 
