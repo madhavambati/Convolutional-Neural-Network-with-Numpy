@@ -55,7 +55,7 @@ Image transition after each layer through the Network.
 - OutputLayer - 10×1
 
 ## Installation:
-Use the following commands to install the model in your machine
+Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
 
 - Clone the repository
 
@@ -65,10 +65,19 @@ Use the following commands to install the model in your machine
 
       cd Convolutional-Neural-Network-with-Numpy
       
-- If u like to train the network yourself. But the network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file
-
+- If you like to train the network yourself.But it took a solid 5hrs for me to train the network.
+      
+      cd model
+      
       python train.py
+      
+  
+- To check the accuracy on MNIST dataset
 
+      python test.py 
+      
+- To predict a random number from an image, save the image in model_images directory and open the file predict.py and change the path
 
+      python predict.py
      
        
