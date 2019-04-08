@@ -1,5 +1,7 @@
 # Convolutional Neural Network from Scratch
-Implementation of Convolutional Neural Networks on MNIST data set 
+Implementation of Convolutional Neural Networks on MNIST dataset.
+
+Achieved an **accuracy score of 97%** on MNIST dataset.
 
 Check out the Live App @ http://madhav.pythonanywhere.com/
 
@@ -54,7 +56,7 @@ Image transition after each layer through the Network.
 - DenseLayer  - 128×1
 - OutputLayer - 10×1
 
-**Accuracy - 97%
+**Accuracy: 97%**
 
 ## Training the Network:
 Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1. [Batch Normalisation](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) into 32 batches.Batch normalization reduces the amount by what the hidden unit values shift around (covariance shift) and Labels are [one-hot encoded](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) to avoid any numerical relationships between the other labels. During Forward Feed [RELU](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0) non-linearity is used at every layer, loss has been calculated. The gradients for each layer are defined. [Adams optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) is used to optimise the cost function. Adam is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural networks. A better explanation of Adam found [here](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/). It took 5hrs to train the network 
