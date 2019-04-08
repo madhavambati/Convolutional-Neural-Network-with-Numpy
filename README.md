@@ -1,4 +1,4 @@
-# [Convolutional Neural Network from Scratch](http://madhav.pythonanywhere.com/)
+# Convolutional Neural Network from Scratch
 Check out the **Live App** @ http://madhav.pythonanywhere.com/
 
 Implementation of Convolutional Neural Networks on MNIST dataset.
@@ -59,7 +59,7 @@ Image transition after each layer through the Network.
 **Accuracy: 97%**
 
 ## Training the Network:
-Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1. [Batch Normalisation](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) into 32 batches.Batch normalization reduces the amount by what the hidden unit values shift around (covariance shift) and Labels are [one-hot encoded](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) to avoid any numerical relationships between the other labels. During Forward Feed [RELU](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0) non-linearity is used at every layer, loss has been calculated. The gradients for each layer are defined. [Adams optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) is used to optimise the cost function. Adam is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural networks. A better explanation of Adam found [here](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/). It took 5hrs to train the network 
+Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1. [Batch Normalisation](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) into 32 batches.Batch normalization reduces the amount by what the hidden unit values shift around (covariance shift) and Labels are [one-hot encoded](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f) to avoid any numerical relationships between the other labels. During Forward Feed [RELU](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0) non-linearity is used at every layer, loss has been calculated. The gradients for each layer are defined. [Adams optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) is used to optimise the cost function. Adam is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural networks. A better explanation of Adam found [here](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/). It took 6hrs to train the network on my Intel i7 4600hq processor.
 
 Some of the images during training:
 
@@ -67,6 +67,12 @@ Some of the images during training:
 
 <img src="https://user-images.githubusercontent.com/27866638/55751473-5f618700-5a63-11e9-973d-75662fc07b61.png" width="880">
 
+
+## Testing the Network:
+After the CNN has finished training, a .pkl file containing the network’s parameters is saved to the directory where the script was run.
+
+Network is tested using the trained parameters to run predictions on all 10,000 digits in the test dataset. After all predictions are made
+an accuracy score of **97.3%** has been achieved.
 
 ## Installation:
 Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
