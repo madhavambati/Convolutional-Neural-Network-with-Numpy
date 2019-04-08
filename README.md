@@ -1,13 +1,13 @@
 # Convolutional Neural Network from Scratch
+Check out the Live App @ http://madhav.pythonanywhere.com/
+
 Implementation of Convolutional Neural Networks on MNIST dataset.
 
 Achieved an **accuracy score of 97%** on MNIST dataset.
 
-Check out the Live App @ http://madhav.pythonanywhere.com/
 
 
-
-An **Optical and Handwritten digit recogniser**. A Convolution Neural Network trained over MNIST data set. 
+An **Optical and Handwritten digit recogniser**.
 
 A **Deep learning Model** made from scratch with only numpy. No other libraries/frameworks were used. 
 
