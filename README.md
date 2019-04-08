@@ -120,4 +120,10 @@ Use the following commands to install the model in your machine. The network is 
  
  <img src="https://user-images.githubusercontent.com/27866638/55753503-1c55e280-5a68-11e9-8137-cedc046135f1.png" width="880">
      
-       
+   
+ ## References:
+ - [https://github.com/llSourcell/Convolutional_neural_network](https://github.com/llSourcell/Convolutional_neural_network)
+ - [https://github.com/dorajam/Convolutional-Network](https://github.com/dorajam/Convolutional-Network)
+ - [https://github.com/zishansami102/CNN-from-Scratch](https://github.com/zishansami102/CNN-from-Scratch)
+ - []()
+ 
