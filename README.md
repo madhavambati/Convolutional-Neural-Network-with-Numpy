@@ -33,3 +33,5 @@ A typical CNN is made of the layers below:
 - [Fully connecter layer](https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/fc_layer.html)
 - [Softmax layer (if necessary)](https://towardsdatascience.com/the-softmax-function-neural-net-outputs-as-probabilities-and-ensemble-classifiers-9bd94d75932)
 
+Detailed description of all these layers can be found in the links given above. To Dive deep in to Convolutional neural networks refer to the links given at the end of this readme 
+
