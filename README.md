@@ -15,7 +15,7 @@ As part of my personal journey to gain a better understanding of Deep Learning, 
 **Screenshots** of the [live App](http://madhav.pythonanywhere.com/):
 
 
-<img src="https://user-images.githubusercontent.com/27866638/55739815-73978b00-5a47-11e9-8a81-f967ab9edf97.png" width = "425"><img src="https://user-images.githubusercontent.com/27866638/55740311-6fb83880-5a48-11e9-8578-cf0f03cc7b1b.png" width = "425"><img src="https://user-images.githubusercontent.com/27866638/55740223-3da6d680-5a48-11e9-8614-d984f024afe3.png" width = "500">
+<img src="https://user-images.githubusercontent.com/27866638/55739815-73978b00-5a47-11e9-8a81-f967ab9edf97.png" width = "440"><img src="https://user-images.githubusercontent.com/27866638/55740311-6fb83880-5a48-11e9-8578-cf0f03cc7b1b.png" width = "440"><img src="https://user-images.githubusercontent.com/27866638/55740223-3da6d680-5a48-11e9-8614-d984f024afe3.png" width = "500">
 
 
 ## About MNIST dataset:
