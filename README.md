@@ -74,16 +74,27 @@ After the CNN has finished training, a .pkl file containing the network’s para
 Network is tested using the trained parameters to run predictions on all 10,000 digits in the test dataset. After all predictions are made
 an accuracy score of **97.3%** has been achieved.
 
+## Web Application:
+An interactive canvas was created when the the predict button is clicked the image data is sent as a jason string and passed through a prediction algorithm. The predicted data/number is displayed at the bottom of the canvas. you can also see the prediction probability in your browser console.
+
+<img src="https://user-images.githubusercontent.com/27866638/55752974-e106e400-5a66-11e9-9898-a46d9c777bd3.png" width="880">
+
 ## Installation:
 Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
 
 - Clone the repository
 
       git clone https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy.git
+      
 
 - Moveto directory Convolutional-Neural-Network-with-Numpy
 
       cd Convolutional-Neural-Network-with-Numpy
+      
+- First install all the dependencies 
+     
+      pip install -r requirements.text
+
       
 - If you like to train the network yourself. But it took a solid 5hrs for me to train the network.
       
