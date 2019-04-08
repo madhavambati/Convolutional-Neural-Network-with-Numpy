@@ -96,19 +96,27 @@ Use the following commands to install the model in your machine. The network is 
       pip install -r requirements.text
 
       
-- If you like to train the network yourself. But it took a solid 5hrs for me to train the network.
+- If you like to **train the network** yourself. But it took a solid 5hrs for me to train the network.
       
       cd model
       
       python train.py
       
   
-- To check the accuracy on MNIST dataset
+- To **check the accuracy** on MNIST dataset
 
       python test.py 
       
-- To predict a random number from an image, save the image in model_images directory and open the file predict.py and change the path
+- To **predict** a random number from an image, save the image in model_images directory and open the file predict.py and change the path
 
       python predict.py
+ 
+- To **run** The web application
+  
+      cd ..
+      python app.py
+      
+ App will start running on the local server http://127.0.0.1:5000/ as shown below :
+ <img src="https://user-images.githubusercontent.com/27866638/55753503-1c55e280-5a68-11e9-8137-cedc046135f1.png" width="880">
      
        
