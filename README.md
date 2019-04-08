@@ -35,3 +35,5 @@ A typical CNN is made of the layers below:
 
 Detailed description of all these layers can be found in the links given above. To Dive deep into Convolutional neural networks refer to the links given at the end of this readme 
 
+# My ConvNet:
+## Architecture:
