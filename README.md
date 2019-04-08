@@ -53,3 +53,22 @@ Image transition after each layer through the Network.
 - FC Layer    - 800×1
 - DenseLayer  - 128×1
 - OutputLayer - 10×1
+
+## Installation:
+Use the following commands to install the model in your machine
+
+- Clone the repository
+
+      git clone https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy.git
+
+- Moveto directory Convolutional-Neural-Network-with-Numpy
+
+      cd Convolutional-Neural-Network-with-Numpy
+      
+- If u like to train the network yourself. But the network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file
+
+      python train.py
+
+
+     
+       
