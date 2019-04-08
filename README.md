@@ -55,7 +55,7 @@ Image transition after each layer through the Network.
 - OutputLayer - 10×1
 
 ## Training the Network:
-Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1.
+Initially the weights are set to random. To make for a smoother training process, we initialize each filter with a mean of 0 and a standard deviation of 1. During Forward Feed [RELU](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0) non-linearity is used at every layer, loss has been calculated. The gradients for each layer are defined. [Adams optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/) is used to optimise the cost function. Adam is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural networks. A better explanation of Adam found [here](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/). 
 
 ## Installation:
 Use the following commands to install the model in your machine. The network is already trained and the parameters are saved in [params.pkl](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/params.pkl) file. You can train the network yourself or you can use it by running [predict.py](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/blob/master/model/predict.py) file, don't forget to save your testing image in [model_images](https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy/tree/master/images_model) directory.
