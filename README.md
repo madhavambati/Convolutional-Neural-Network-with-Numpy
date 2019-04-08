@@ -111,12 +111,13 @@ Use the following commands to install the model in your machine. The network is 
 
       python predict.py
  
-- To **run** The web application
+- To **run web application**
   
       cd ..
       python app.py
       
  App will start running on the local server http://127.0.0.1:5000/ as shown below :
+ 
  <img src="https://user-images.githubusercontent.com/27866638/55753503-1c55e280-5a68-11e9-8137-cedc046135f1.png" width="880">
      
        
