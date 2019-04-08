@@ -49,7 +49,7 @@ Image transition after each layer through the Network.
 - Input Image- 28×28×1
 - ConvLayer1 - 24×24×8
 - ConvLayer2 - 20×20×8
-- Maxpool      - 10×10×8
-- FC Layer     - 800×1
+- MaxpoolLayer    - 10×10×8
+- FC Layer   - 800×1
 - DenseLayer - 128×1
 - OutputLayer- 10×1
