@@ -87,7 +87,7 @@ Use the following commands to install the model in your machine. The network is 
       git clone https://github.com/madhavambati/Convolutional-Neural-Network-with-Numpy.git
       
 
-- Moveto directory Convolutional-Neural-Network-with-Numpy
+- Move to directory Convolutional-Neural-Network-with-Numpy
 
       cd Convolutional-Neural-Network-with-Numpy
       
