@@ -1,5 +1,5 @@
-# Convolutional Neural Network from Scratch
-Check out the Live App @ http://madhav.pythonanywhere.com/
+# [Convolutional Neural Network from Scratch](http://madhav.pythonanywhere.com/)
+Check out the **Live App** @ http://madhav.pythonanywhere.com/
 
 Implementation of Convolutional Neural Networks on MNIST dataset.
 
