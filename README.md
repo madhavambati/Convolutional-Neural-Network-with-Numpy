@@ -1,4 +1,4 @@
-# Convolutional-Neural-Network-from-Scratch
+# Convolutional Neural Network from Scratch
 Implementation of Convolutional Neural Networks on MNIST data set 
 
 Check out the Live App @ http://madhav.pythonanywhere.com/
@@ -37,3 +37,5 @@ Detailed description of all these layers can be found in the links given above. 
 
 # My ConvNet:
 ## Architecture:
+
+**INPUT -> CONV(5*5 with 8 filters) -> CONV(5*5 with 8 filters) -> MAXPOOL(2*2 with stride 2) -> FC -> DenseLayer -> OutputLayer
