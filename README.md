@@ -61,7 +61,7 @@ Some of the images during training:
 
 <img src="https://user-images.githubusercontent.com/27866638/55750580-39d37e00-5a61-11e9-9804-ac31dd5366b2.png" width="880">
 
-<img src="https://user-images.githubusercontent.com/27866638/55751399-304b1580-5a63-11e9-831c-ee515191f373.png" width="880">
+<img src="https://user-images.githubusercontent.com/27866638/55751473-5f618700-5a63-11e9-973d-75662fc07b61.png" width="880">
 
 
 ## Installation:
