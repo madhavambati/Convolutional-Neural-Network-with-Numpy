@@ -46,4 +46,4 @@ Detailed description of all these layers can be found in the links given above. 
 
 Image transition after each layer through the Network.
 
-- Input Image - 28*28*1
+- Input Image - 28×28×1
