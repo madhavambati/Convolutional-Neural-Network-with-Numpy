@@ -9,7 +9,8 @@ An **Optical and Handwritten digit recogniser**. A Convolution Neural Network tr
 
 A **Deep learning Model** made from scratch with only numpy. No other libraries/frameworks were used. 
 
-**Motivation:**  As part of my personal journey to gain a better understanding of Deep Learning, I’ve decided to build a Convolutional Neural Network from scratch without a deep learning library like TensorFlow. I believe that understanding the inner workings of a Neural Network is important to any aspiring Data Scientist.This allowed me to deeply understand every method in my model and gave me a better intution of Neural Networks.
+### Motivation:
+As part of my personal journey to gain a better understanding of Deep Learning, I’ve decided to build a Convolutional Neural Network from scratch without a deep learning library like TensorFlow. I believe that understanding the inner workings of a Neural Network is important to any aspiring Data Scientist.This allowed me to deeply understand every method in my model and gave me a better intution of Neural Networks.
 
 
 
